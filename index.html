@@ -4,8 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scientific Calculator</title>
+
+    <!--CSS Link-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-    
+ 
+    <div class="container">
+    <form name="calculator">
+        <input type="text" name="display">
+        <div id="keyboard">
+        <input type="button" name="btnsin" value="sin" onclick="fnsin()">
+        <input type="button" name="btncos" value="cos" onclick="fncos()">
+        <input type="button" name="btntan" value="tan" onclick="fntan()">
+        <input type="button" name="btnlog" value="log" onclick="fnlog()">
+       
+
+
+        <br>
+        <button type="button" name="btnsqr" value="x^2" onclick="square()">x <sup>2</sup></button>
+        <button type="button" name="btncube" value="x^3" onclick="cube()">x <sup>3</sup></button>
+        <input type="button" name="btnsqrt" value="&radic;" onclick="squarert()">
+        <input type="button" name="btncubert" value="&#8731;" onclick="cubert()">
+        <input type="button" name="btnnm" value="%" onclick="percentage()">
+
+        <br>
+        <input type="button" name="btn10pow" value="Exp" onclick="exp()">
+        <input type="button" name="btnabs" value="Abs" onclick="abs()">
+        <input type="button" name="btnfactorial" value="x!" onclick="facto()">
+        <input type="button" name="openbrack" value="(" onclick="myclick('(')">
+        <input type="button" name="openbrack" value=")" onclick="myclick(')')">
+        <br>
+        <input type="button" name="btn9" value="7" onclick="myclick('7')">
+        <input type="button" name="btn7" value="8" onclick="myclick('8')">
+        <input type="button" name="btn9" value="9" onclick="myclick('9')">
+        <input type="button" name="btndel" value="DEL" onclick="backspace()">
+        <input type="button" name="btnac" value="AC" onclick="ac()">
+        <br>
+        <input type="button" name="btn4" value="4" onclick="myclick('4')">
+        <input type="button" name="btn5" value="5" onclick="myclick('5')">
+        <input type="button" name="btn6" value="6" onclick="myclick('6')">
+        <input type="button" name="btnmul" value="*" onclick="myclick('*')">
+        <input type="button" name="btnadiv" value="/" onclick="myclick('/')">
+        <br>
+        <input type="button" name="btn1" value="1" onclick="myclick('1')">
+        <input type="button" name="btn2" value="2" onclick="myclick('2')">
+        <input type="button" name="btn3" value="3" onclick="myclick('3')">
+        <input type="button" name="btnadd" value="+" onclick="myclick('+')">
+        <input type="button" name="btnsub" value="-" onclick="myclick('-')">
+        <br>
+        <input type="button" name="btnzero" value="0" onclick="myclick('0')">
+        <input type="button" name="btnpoint" value="." onclick="myclick('.')">
+        <button type="button" name="btn10pow" value="*10^x" onclick="tenpow()">X10 <sup>x</sup></button>
+        <input type="button" name="btnequal" value="=" onclick="equalto()">
+        </div><!--End of keyboards-->
+    </form>
+    </div><!--End of conatiner-->
+
+    <!--JS Link-->
+    <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
